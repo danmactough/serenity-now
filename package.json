@@ -7,13 +7,17 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/"
   },
   "author": "Social Tables",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "eslint": "^4.4.1",
     "eslint-plugin-json": "^1.2.0",
-    "eslint-plugin-node": "^5.1.1"
+    "eslint-plugin-node": "^5.1.1",
+    "mocha": "^3.5.0",
+    "restify": "^4.3.1",
+    "supertest": "^3.0.0"
   }
 }
