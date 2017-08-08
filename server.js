@@ -5,6 +5,7 @@ const name = pkg.name;
 const version = pkg.version;
 
 const onUncaughtException = require('./on-uncaught-exception');
+const onUnhandledRejection = require('./on-unhandled-rejection');
 const funkyMiddleware = require('./funky-middleware');
 
 function createServer (config) {
@@ -23,6 +24,7 @@ function createServer (config) {
   });
   server.on('after', auditLogger);
   server.on('uncaughtException', onUncaughtException);
+  process.on('unhandledRejection', onUnhandledRejection);
   // Handle generic errors, which get emitted as ''
   server.on('', function(req, res, err) {
     if (err) {
