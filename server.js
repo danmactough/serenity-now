@@ -1,4 +1,3 @@
-global.Promise = require('bluebird');
 const restify = require('restify');
 const bunyan = require('bunyan');
 const pkg = require('./package.json');
