@@ -1,5 +1,4 @@
 'use strict';
-global.Promise = require('bluebird');
 const restify = require('restify');
 const bunyan = require('bunyan'); // eslint-disable-line node/no-extraneous-require
 const pkg = require('./package.json');
