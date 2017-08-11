@@ -17,6 +17,7 @@
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-node": "^5.1.1",
     "mocha": "^3.5.0",
+    "raven": "^2.1.1",
     "restify": "^4.3.1",
     "supertest": "^3.0.0"
   }

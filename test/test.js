@@ -47,10 +47,8 @@ describe('serenity now', function () {
       .send()
       .expect(500)
       .then(res => {
-        assert.deepEqual(res.body, {
-          code: 'InternalServerError',
-          message: 'Internal Server Error'
-        });
+        assert.equal(res.body.code, 'InternalServerError');
+        assert(res.body.message.match(/^Internal Server Error: \w+$/));
       });
   });
 
@@ -60,10 +58,8 @@ describe('serenity now', function () {
       .send()
       .expect(500)
       .then(res => {
-        assert.deepEqual(res.body, {
-          code: 'InternalServerError',
-          message: 'Internal Server Error'
-        });
+        assert.equal(res.body.code, 'InternalServerError');
+        assert(res.body.message.match(/^Internal Server Error: \w+$/));
       });
   });
 });
