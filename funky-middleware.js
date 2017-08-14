@@ -1,6 +1,7 @@
 module.exports = function (req, res, next) {
-  Promise.resolve()
-    .then(() => {
-      next();
-    }, next);
+  async function fn () {
+    await Promise.resolve();
+    next();
+  }
+  fn();
 };
