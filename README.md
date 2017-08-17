@@ -1,6 +1,8 @@
 # serenity-now
 Please handle your Promises' errors
 
+SlideShare - http://mact.me/7j
+
 ## Overview
 
 I'm going to demonstrate a problem with the way [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) and [Domains](https://nodejs.org/dist/latest-v6.x/docs/api/domain.html) interact in Node.js.
